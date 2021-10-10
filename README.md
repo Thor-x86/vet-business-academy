@@ -2,6 +2,10 @@
 
 This source code supposed to be proprietary. However, they won't care the site anymore. So I publish this to GitHub for knowledge sharing. This site is using **Vue** with **routing** and **authentication**. So you could use this as an example for your ongoing project. Do whatever you want with this source, just **don't forget to credit my name** if you copy a lot of stuffs from here. Thanks!
 
+## Username and Password
+
+See [AccountAPI.ts](https://github.com/Thor-x86/vet-business-academy/blob/master/src/api/AccountAPI.ts). Modify it as you like :)
+
 ## Project setup
 
 ```
