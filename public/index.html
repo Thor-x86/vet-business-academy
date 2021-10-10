@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="<%= BASE_URL %>favicon.svg"
+      media="(prefers-color-scheme:light)"
+      type="image/svg+xml"
+    />
+    <link
+      rel="icon"
+      href="<%= BASE_URL %>favicon-invert.svg"
+      media="(prefers-color-scheme:dark)"
+      type="image/svg+xml"
+    />
+    <title>Vet Business Academy</title>
+    <style>
+      html,
+      body {
+        overflow: hidden;
+      }
+      #splashscreen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 65535;
+      }
+      .splashscreen-logo {
+        width: 200px;
+        height: 200px;
+      }
+      .splashscreen-spinner {
+        width: 64px;
+        height: 64px;
+        margin-top: 32px;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .splashscreen-spinner {
+          animation: splashscreen-anim-spin infinite 1s linear;
+        }
+      }
+      @keyframes splashscreen-anim-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but this site doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"><!-- built files will be auto injected --></div>
+    <div id="splashscreen">
+      <img
+        class="splashscreen-logo"
+        src="<%= BASE_URL %>splash.svg"
+        alt="Vet Business Academy"
+      />
+      <img
+        class="splashscreen-spinner"
+        src="<%= BASE_URL %>splash-spinner.svg"
+        alt="Loading, please wait."
+      />
+    </div>
+  </body>
+</html>

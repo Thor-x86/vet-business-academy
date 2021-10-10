@@ -1,0 +1,21 @@
+# NodeJS Dependencies
+/node_modules/
+
+# Build Output
+/dist/
+
+# Compilation Logs
+/*.log
+
+# Hidden files
+.*
+
+# Always include this hidden files
+!.editorconfig
+!.gitignore
+!.prettierrc.json
+!/.vscode/
+
+# VSCode specific
+/.vscode/*
+!/.vscode/settings.json

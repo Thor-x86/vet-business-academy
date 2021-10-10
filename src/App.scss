@@ -1,0 +1,40 @@
+// Theme Color:
+$theme-colors: (
+  "primary": #d32f2f,
+  "secondary": #1aae9f
+);
+$primary: #d32f2f;
+$secondary: #1aae9f;
+
+@import "bootstrap";
+@import "bootstrap-vue";
+
+// Global Styling
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+// Root Styling
+#app-root {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+// Global-scope styles:
+
+.underline {
+  border-bottom: 2px solid black;
+}
