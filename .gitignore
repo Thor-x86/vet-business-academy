@@ -10,6 +10,9 @@
 # Hidden files
 .*
 
+# Always include .htaccess
+!.htaccess
+
 # Always include this hidden files
 !.editorconfig
 !.gitignore
